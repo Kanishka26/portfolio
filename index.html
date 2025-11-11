@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Kanishka | Portfolio</title>
+  <link rel="stylesheet" href="style.css" />
+  <script src="https://kit.fontawesome.com/a2e0e6d3c1.js" crossorigin="anonymous"></script>
+</head>
+<body>
+  <header class="glass-header">
+    <div class="logo">Kanishka</div>
+    <nav>
+      <a href="#home">Home</a>
+      <a href="#about">About</a>
+      <a href="#skills" onclick="scrollToSection('skills')">Skills</a>
+      <a href="#projects">Projects</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </header>
+
+  <section id="home" class="home fade-in">
+    <div class="hero-text">
+      <h1>Hey, I'm <span>Kanishka</span> 👋</h1>
+      <p>Creative developer weaving code, art, and data into experiences that feel alive.</p>
+      <button class="btn" onclick="scrollToSection('projects')">Explore My Work</button>
+    </div>
+  </section>
+
+  
+    <section id="about" class="about about-hero">
+      <div class="container">
+        <h2 class="about-title">About Me</h2>
+        <div class="about-text">
+          <p>I build with intent and imagination ; where data meets design, and logic dances with art. Web dev is my playground, data science my compass.</p>
+
+          <p>I learn like lightning, iterate without pause, and bring vision to the frontlines of every project. Expectation isn’t my ceiling , it’s my launchpad</p>
+
+          <p>When I’m not turning caffeine into code, you’ll find me sketching worlds on paper, lost in the pages of a book, or vibing to a song that understands what words can’t.</p>
+          <p>Because balance matters - and creation, in all its forms, is my language.</p>
+        </div>
+      </div>
+    </section>
+
+  <section id="skills" class="skills fade-in">
+    <h2 class="section-title">Technical Skills</h2>
+    <div class="skill-grid">
+      <div class="skill-card featured">
+        <h4>Web Development</h4>
+        <ul>
+          <li>HTML</li>
+          <li>CSS</li>
+          <li>JavaScript</li>
+          <li>React</li>
+        </ul>
+      </div>
+
+      <div class="skill-card">
+        <h4>Data Science</h4>
+        <ul>
+          <li>Python</li>
+          <li>Pandas</li>
+          <li>NumPy</li>
+          <li>Matplotlib</li>
+        </ul>
+      </div>
+
+      <div class="skill-card">
+        <h4>Backend &amp; Blockchain</h4>
+        <ul>
+          <li>Python</li>
+          <li>Flask</li>
+          <li>Node.js</li>
+        </ul>
+      </div>
+
+      <div class="skill-card">
+        <h4>Database &amp; Tools</h4>
+        <ul>
+          <li>MySQL</li>
+          <li>Git &amp; GitHub</li>
+          <li>Java</li>
+          <li>VS Code</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <section id="projects" class="fade-in">
+    <h2 class="section-title">Featured Projects</h2>
+    <div class="project-grid">
+      <div class="project-card">
+        <div class="project-content">
+          <h3>E-Sehyog</h3>
+          <p>Chatbot to help users discover and access verified Central and State Government Schemes seamlessly through WhatsApp.</p>
+          <div class="tags">
+            <span class="tag">Python</span>
+            <span class="tag">Flask</span>
+            <span class="tag">Local Storage</span>
+          </div>
+          <a class="view-link" href="https://github.com/Kanishka26/eSahyog">View Code →</a>
+        </div>
+      </div>
+
+      <div class="project-card featured">
+        <div class="project-content">
+          <h3>Falcon 9 Launch Prediction</h3>
+          <p>Machine Learning Model utilizes Jupyter interface to make accurate Predictions for Forecasting of landing of falcon 9 rocket </p>
+          <div class="tags">
+            <span class="tag">Python</span>
+            <span class="tag">Matplotlib</span>
+            <span class="tag">Machine Learning</span>
+            <span class="tag">Seaborn</span>
+            <span class="tag">SQLLite</span>
+          </div>
+          <a class="view-link" href="https://github.com/Kanishka26/Falcon9-landing-prediction-">View Code →</a>
+        </div>
+      </div>
+
+      <div class="project-card">
+        <div class="project-content">
+          <h3>Etch a Sketch </h3>
+          <p>A simple web-based Etch-a-Sketch app built with HTML, CSS, and JavaScript.</p>
+          <div class="tags">
+            <span class="tag">HTML</span>
+            <span class="tag">CSS</span>
+            <span class="tag">JavaScript</span>
+          </div>
+          <a class="view-link" href="https://github.com/Kanishka26/Etch-a-sketch">View Code →</a>
+        </div>
+      </div>
+
+      <div class="project-card">
+        <div class="project-content">
+          <h3>AhaarSetu</h3>
+          <p>Developed a platform for Ayurvedic practitioners to create patient-specific diet charts integrating modern nutrition with Ayurvedic principles.</p>
+          <div class="tags">
+            <span class="tag">Next.js</span>
+            <span class="tag">MongoDB</span>
+            <span class="tag">TypeScript</span>
+            <span class="tag">Node.js</span>
+          </div>
+          <a class="view-link" href="https://github.com/Kanishka26/sih">View Code →</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="contact" class="contact fade-in">
+    <h2 class="section-title">Let’s Connect</h2>
+    <p class="contact-text">Say hi, collaborate, or dream up something wild 👇</p>
+    <div class="socials">
+      <!-- Assumed GitHub username from repo owner: Kanishka26. Update if different. -->
+      <a href="https://github.com/Kanishka26" target="_blank" rel="noopener noreferrer" aria-label="GitHub">
+        <svg viewBox="0 0 24 24" role="img" aria-hidden="false"><title>GitHub</title><path d="M12 .5C5.73.5.5 5.73.5 12c0 5.08 3.29 9.39 7.86 10.91.57.11.78-.25.78-.55 0-.27-.01-1-.02-1.96-3.2.7-3.87-1.54-3.87-1.54-.52-1.31-1.28-1.66-1.28-1.66-1.05-.72.08-.71.08-.71 1.16.08 1.77 1.19 1.77 1.19 1.03 1.77 2.7 1.26 3.36.97.1-.76.4-1.26.72-1.55-2.56-.29-5.25-1.28-5.25-5.7 0-1.26.45-2.3 1.18-3.11-.12-.29-.51-1.47.11-3.06 0 0 .96-.31 3.15 1.18a10.95 10.95 0 012.87-.39c.97 0 1.95.13 2.87.39 2.19-1.49 3.15-1.18 3.15-1.18.62 1.59.23 2.77.11 3.06.74.81 1.18 1.85 1.18 3.11 0 4.43-2.7 5.4-5.27 5.68.41.35.77 1.05.77 2.12 0 1.53-.01 2.77-.01 3.15 0 .3.2.66.79.55A11.5 11.5 0 0023.5 12C23.5 5.73 18.27.5 12 .5z"/></svg>
+        <span class="sr-only">GitHub</span>
+      </a>
+      <!-- Placeholder LinkedIn profile; update to your real LinkedIn URL if available -->
+      <a href="https://www.linkedin.com/in/kxnishka/" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn">
+        <svg viewBox="0 0 24 24" role="img" aria-hidden="false"><title>LinkedIn</title><path d="M4.98 3.5C4.98 4.88 3.87 6 2.5 6S0 4.88 0 3.5 1.12 1 2.5 1 4.98 2.12 4.98 3.5zM.2 8h4.6V24H.2zM9 8h4.4v2.2h.1c.6-1.1 2-2.2 4.2-2.2C22.6 8 24 10.4 24 15.1V24h-4.6v-7c0-1.7 0-3.9-2.4-3.9-2.4 0-2.8 1.9-2.8 3.8V24H9V8z"/></svg>
+        <span class="sr-only">LinkedIn</span>
+      </a>
+      <a href="mailto:kanishka261204@gmail.com" aria-label="Email">
+        <svg viewBox="0 0 24 24" role="img" aria-hidden="false"><title>Email</title><path d="M2 4h20v16H2z" fill="none"/><path d="M22 6l-10 7L2 6v12h20zM2 6l10 7 10-7"/></svg>
+        <span class="sr-only">Email</span>
+      </a>
+    </div>
+  </section>
+
+  <footer>© 2025 Kanishka • Crafted with stardust ✨</footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
